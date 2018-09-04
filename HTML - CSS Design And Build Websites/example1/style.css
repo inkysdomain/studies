@@ -1,0 +1,66 @@
+
+ .spacebg {
+	width:100%;
+	min-height:calc(100vh + 468px);
+	position:fixed;
+	top:0;
+	left:0;
+	background-image: url("spacebg.gif");
+	z-index:-1;
+    }
+    
+    @-webkit-keyframes backgroundScroll {
+        0% {transform: translateY(-468px);  opacity:1;}
+        50% {transform: translateY(-234px); opacity:0.35;}
+        100% {transform: translateY(0px); opacity:1;}
+        }
+    @keyframes backgroundScroll {
+        0% {transform: translateY(-468px); opacity:1;}
+        50% {transform: translateY(-234px); opacity:0.35;}
+        100% {transform: translateY(0px); opacity:1;}
+        }
+ 
+
+ 
+ 
+@keyframes ants { to { background-position: 100% 100% } }
+
+.castleimg {
+  border: 1px solid transparent;
+  padding: 1em;	
+  background: linear-gradient(black, black) padding-box, repeating-linear-gradient(-45deg, magenta 0, cyan 25%, transparent 0, transparent 50%) 0 / .6em .6em;
+  animation: ants 30s linear infinite;
+	font-family:'Font';
+  float: right;
+  margin-left: 20px;
+}
+
+.castlefadepink {
+  border: 1px solid transparent;
+  padding: 1em;	
+  background: linear-gradient(black, black) padding-box, repeating-linear-gradient(-45deg, magenta 0, cyan 25%, transparent 0, transparent 50%) 0 / .6em .6em;
+  animation: ants 30s linear infinite;
+	text-align:center;
+	font-size:16px;
+	color:magenta;
+	opacity:.6;
+	font-family:'Font';
+}
+
+.castlefadeblue {
+  border: 1px solid transparent;
+  padding: 1em;	
+  background: linear-gradient(black, black) padding-box, repeating-linear-gradient(-45deg, magenta 0, cyan 25%, transparent 0, transparent 50%) 0 / .6em .6em;
+  animation: ants 30s linear infinite;
+	text-align:center;
+	font-size:16px;
+	color:cyan;
+	opacity:.6;
+	font-family:'Font';
+}
+.castlefadepink:hover {color:cyan;opacity:1.0;}
+.castlefadeblue:hover {color:magenta;opacity:1.0;}
+@font-face {
+    font-family: 'Font';
+        src: url('Ubuntu-R.ttf') format('truetype');
+        }
